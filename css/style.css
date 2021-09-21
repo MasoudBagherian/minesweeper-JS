@@ -192,18 +192,15 @@ body {
   position: fixed;
   /* width: 60%; */
   left: 50%;
-  bottom: 100%;
-  transform: translate(-50%, 0);
+  top: 0;
+  transform: translate3d(-50%, -100%, 0);
   z-index: 20;
   transition: 0.5s linear;
 }
 .result.winner,
 .result.loser {
-  /* bottom: 50%; */
-  bottom: 2rem;
-  /* transform: translate(-50%, 50%); */
-  /* transform: translate(-50%, 0); */
-  /* transition-timing-function: ease-in; */
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
 .result.winner {
   color: #155724;
